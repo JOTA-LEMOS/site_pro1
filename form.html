@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar md:navbar-expand bg-1" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Chess</a>
+        <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDarkDrawer" aria-controls="navbarDarkDrawer" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog class="drawer drawer-end" tabindex="-1" id="navbarDarkDrawer" aria-labelledby="navbarDarkDrawerLabel">
+          <div class="drawer-header">
+            <h5 class="drawer-title" id="navbarDarkDrawerLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+          </div>
+          <div class="drawer-body mb-2 md:mb-0">
+            <ul class="nav navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Formulario</a>
+              </li>
+              <li class="nav-item text-capitalize">
+                <button class="nav-link " type="button" data-bs-toggle="menu" aria-expanded="false">
+                  Aprender
+                </button>
+                <div class="menu">
+                  <a class="menu-item text-capitalize" href="#">Básicos do xadrez</a>
+                  <a class="menu-item text-capitalize" href="#">Coordenadas</a>
+                  <a class="menu-item text-capitalize" href="#">Aberturas</a>
+                  <a class="menu-item text-capitalize" href="#">meio jogo</a>
+                  <a class="menu-item text-capitalize" href="#">finais</a>
+                  
+                </div>
+              </li>
+            </ul>
+
+            
+          </div>
+        </dialog>
+
+        
+      </div>
+    </nav>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="card " style="width: 18rem;">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Chess_piece_-_White_queen.jpg/250px-Chess_piece_-_White_queen.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"> Dama</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">Bispo</p>
+              </div>
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Chess_piece_-_Black_bishop.JPG/250px-Chess_piece_-_Black_bishop.JPG?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=thumbnail" class="card-img-bottom" alt="...">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body ">
+                <p class="card-text">Cavalo</p>
+              </div>
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Chess_piece_-_Black_knight.JPG/500px-Chess_piece_-_Black_knight.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail" class="card-img-bottom" alt="...">
+            </div>
+          </div>
+         
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Chess_piece_-_White_rook.JPG/500px-Chess_piece_-_White_rook.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Torre</p>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="accordion">
+        <details class="accordion-item" name="accordionExample" open>
+          <summary class="accordion-header">
+            Abertura Réti
+            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+          </summary>
+          <div class="accordion-body">
+            É o modernismo em seu mais alto grau. Visa, inicialmente, controle em lugar de posse do centro. Sua ideia básica, porém, é ocupar o centro em momento apropriado, isto é, quando for diretamente favorável às Brancas. Encoraja, também, o avanço dos Peões centrais das Pretas, para, depois, atacá-los, criando-lhes, assim, fraquezas irremediáveis. O "fianchetto" é a característica desta abertura.
+          </div>
+        </details>
+        <details class="accordion-item" name="accordionExample">
+          <summary class="accordion-header">
+            Defesa francesa
+            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+          </summary>
+          <div class="accordion-body">
+            Seguindo os movimentos de abertura 1.e4 e6, a linha principal da Defesa francesa continua com 2.d4 d5 (veja abaixo as alternativas). As brancas estabelecem um centro de peões, que as pretas imediatamente desafiam atacando o peão na e4. A mesma posição pode ser alcançada pela transposição de um(a) jogo/abertura do peão da dama após 1.d4 e6 2.e4 d5 ou o declínio de um gambito Blackmar–Diemer após 1.d4 d5 2.e4 e6.
+
+As opções das brancas incluem defender o peão na e4 com 3.Cc3 ou 3.Cd2, avançá-lo com 3.e5 ou trocá-lo com 3. exd5, cada uma das quais leva a diferentes tipos de posições. Defender o peão com 3.Bd3 permite 3...dxe4 4.Bxe4 Cf6, quando as pretas ganham um tempo ou a vantagem dos dois bispos.
+          </div>
+        </details>
+        <details class="accordion-item" name="accordionExample">
+          <summary class="accordion-header">
+            Defesa Índia
+            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+          </summary>
+          <div class="accordion-body">
+            A Defesa Índia Antiga é uma defesa de xadrez que ocorre após os lances:
+
+1.d4 Cf6 2.c4 d6
+Esta defesa diferencia-se da Defesa Índia do Rei pelo desenvolvimento do bispo do rei das pretas em e7 em vez de flanquear em g7.
+
+A Defesa Índia Antiga é considerada razoável, mas desde que não flanqueia o bispo torna-se mais passiva que a defesa índia do rei, sendo portanto menos popular.
+          </div>
+        </details>
+      </div>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-autoplay="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://m.media-amazon.com/images/I/71Sd4CCOm8L.jpg" class="d-block w-200 mx-auto rounded-5" style="height: 400px; " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://chess.co.uk/cdn/shop/products/reti-move-by-move_1024x1024_621272d7-0c58-4081-99fd-827449157f5a.jpg?v=1601459649" class="d-block w-200 mx-auto rounded-5" style="height: 400px; " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://m.media-amazon.com/images/I/715ImAEBx-L._AC_UF1000,1000_QL80_.jpg" class="d-block w-200 mx-auto rounded-5" style="height: 400px; " alt="...">
+          </div>
+        </div>
+      
+        <div class="d-flex justify-content-between align-items-center mt-2">
+          <div class="carousel-indicators position-static m-0">
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div>
+            <button class="btn-icon btn-sm carousel-control-play-pause" type="button" data-bs-target="#carouselExampleAutoplaying" aria-label="Pause">
+              <span class="carousel-icon-pause" aria-hidden="true"></span>
+              <span class="carousel-icon-play" aria-hidden="true"></span>
+            </button>
+            <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-icon-prev" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-icon-next" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+  
+     
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+  </body>
+</html>
